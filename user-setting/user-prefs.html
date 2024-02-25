@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/user.css">
+    <title>setting</title>
+</head>
+
+<body>
+
+
+    <form class="main-container" onsubmit="onSet(event)">
+        <header>
+            <h1>setting</h1>
+
+        </header>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Enter you E-mail" />
+
+        <label for="age">Age: <span id="sAge">26</span></label>
+        <input type="range" id="age" name="age" step="1" min="18" max="120" value="26" onchange="showAge(this.value)" />
+
+        <h3>color</h3>
+
+        <label for="background-color">Set Background Color: </label>
+        <input type="color" id="background-color" name="background-color" form="frmRegister" value="#d1cfcc" id="color" />
+
+        <label for="color">Set Text Color: </label>
+        <input type="color" id="color" name="color" form="frmRegister" value="#292013" id="color" />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+
+        <label for="time">Birth Time:</label>
+        <input type="time" id="time" name="time">
+
+        <button>set</button>
+
+        <!-- <button type="reset">reset</button> -->
+        
+        <nav>
+            <a href="/welcome-page/index.html">go to Home page</a>
+        </nav>
+    </form>
+
+
+    <script src="js/service/util.js"></script>
+    <script src="js/service/storage.js"></script>
+    <script src="js/service/service.js"></script>
+    <script src="js/controller.js"></script>
+
+</body>
+
+</html>
